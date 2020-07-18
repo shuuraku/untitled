@@ -4,7 +4,11 @@ public class hello {
     public static void main(String[] args) {
         Person p = new Person();
         p.hello();
-        int i =32; //位元
+        p.weight = 60;
+        p.height = 1.5f;
+        System.out.println(p.bmi());
+
+        /*int i =32; //位元
 
         Integer age2 = 19;
         age2.byteValue();
@@ -18,7 +22,7 @@ public class hello {
         double d = 6.6;
         float f = 1.1f;
         boolean tf = true;
-        String xd = "AAA"; //多字元雙引號
+        String xd = "AAA"; //多字元雙引號*/
 
     }
 }

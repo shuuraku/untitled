@@ -1,8 +1,10 @@
 package com.learn;
 
+import jdk.jshell.PersistentSnippet;
+
 public class hello {
     public static void main(String[] args) {
-        Person p = new Person();
+        Person p = new Person(66.5f,1.7f);
         p.hello();
         p.weight = 60;
         p.height = 1.5f;

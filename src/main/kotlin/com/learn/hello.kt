@@ -5,6 +5,12 @@ fun main() {
     val h = Human(weight = 66.5f,height = 1.7f) //val h = Human(66.5f,1.7f)
     h.hello()
     println(h.bmi())
+    val s = 75
+    println(s >70 && s< 80)
+    val c :Char = 'A'
+    println(c.toInt() < 60 || c.toInt() > 60)
+
+
     /*val age : Int = 19
     var age2 : Int = 18
     age2 = 19

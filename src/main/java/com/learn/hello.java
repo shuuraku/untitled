@@ -9,6 +9,11 @@ public class hello {
         p.weight = 60;
         p.height = 1.5f;
         System.out.println(p.bmi());
+        int s = 65;
+        System.out.println(s>70 || s >60); //或or
+        System.out.println(s>60 && s < 70); //且and
+        char a = 'a';
+        System.out.println(a>60);
 
         /*int i =32; //位元
 

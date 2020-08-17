@@ -2,6 +2,18 @@ package com.learn
 
 fun main() {
 //    println("hello")
+    var x:String? = "abcde"
+    x = null
+    println(x?.length)
+//    println(x!!.length) -> 會直接出現NullPointerException的訊息，不會輸出null;
+    println(x?.get(3))
+    println(x?.substring(2))
+
+    var y = "abcdef"
+    println(y.length)
+    println(y.get(2))
+    println(y.substring(1,3))
+
     val h = Human(weight = 66.5f,height = 1.7f) //val h = Human(66.5f,1.7f)
     h.hello()
     println(h.bmi())

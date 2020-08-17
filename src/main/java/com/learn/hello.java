@@ -4,6 +4,14 @@ import jdk.jshell.PersistentSnippet;
 
 public class hello {
     public static void main(String[] args) {
+        String x = "abcde";
+        System.out.println(x.length());
+        System.out.println(x.charAt(3));
+        System.out.println(x.substring(3));
+        System.out.println(x.substring(1,4));
+
+
+        
         Person p = new Person(66.5f,1.7f);
         p.hello();
         p.weight = 60;

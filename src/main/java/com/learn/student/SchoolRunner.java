@@ -11,7 +11,7 @@ public class SchoolRunner {
         int english = scanner.nextInt();
         System.out.print("請輸入數學成績");
         int math = scanner.nextInt();
-        Student stu = new Student(name,english,math);
+        Studentj stu = new Studentj(name,english,math);
         stu.print();
     }
 }

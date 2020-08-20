@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SchoolRunner {
     public static void main(String[] args) {
 //        userinput();
-        Studentj stu = new Studentj("raku",60,90);
+        Studentj stu = new Studentj("raku",60,100);
         stu.print();
         System.out.println(stu.highest());
     }

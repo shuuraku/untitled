@@ -44,6 +44,6 @@ class Human(var name:String = "",var weight:Float,var height:Float) {
     }
 
     fun hello(){
-        println("hello kotline")
+        println("hello kotlin")
     }
 }

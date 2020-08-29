@@ -1,5 +1,8 @@
 package parking;
 
+import kotlin.math.UMathKt;
+
+import javax.imageio.ImageTranscoder;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -11,7 +14,22 @@ import java.util.Date;
 
 public class Tester {
     public static void main(String[] args) throws ParseException {
-        //java8
+        LocalDateTime enter =
+                LocalDateTime.of(2020,12,19,0,0,0);
+        LocalDateTime leave =
+                LocalDateTime.of(2020,12,19,3,0,0);
+        Car car = new Car("A0-0001",enter);
+        car.setLeave(leave);
+        System.out.println(car.getDuration());
+        int hours = (int)Math.ceil(car.getDuration()/60);
+        System.out.println(hours);
+        System.out.println(hours *30);
+
+//        java8();
+//        java();
+    }
+
+    private static void java8() {
         Instant instant = Instant.now();
         System.out.println(instant+"\n");
         //Local
@@ -25,7 +43,6 @@ public class Tester {
                 = LocalDateTime.of(2020,12,19,12,19);
         System.out.println(other);
         System.out.println(formatter.format(other));
-//        java();
     }
 
     private static void java() throws ParseException {

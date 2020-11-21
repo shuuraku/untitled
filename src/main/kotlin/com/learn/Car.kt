@@ -11,7 +11,7 @@ fun main() {
     var car = Car("A0-0001",enter)
     car.leave = leave
     println(car.duration())
-    val hours = Math.ceil(car.duration()/60.0).toLong()
+    val hours = Math.ceil((car.duration()/60.0)).toLong()
     println(hours)
     println(hours*30)
 }

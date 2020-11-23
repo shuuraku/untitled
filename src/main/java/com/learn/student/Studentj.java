@@ -5,6 +5,7 @@ public class Studentj {
     String name;
     int english;
     int math;
+    static int pass = 60;
 
     public Studentj(String name, int english, int math) {
         this.name = name;
@@ -24,7 +25,7 @@ public class Studentj {
 
     public void print(){
         System.out.print(name + "\t" + english + "\t" + math
-                + "\t" + getAverage() + ((getAverage()>=60)? "\tPASS":"\tFAILED"));
+                + "\t" + getAverage() + ((getAverage()>=pass)? "\tPASS":"\tFAILED"));
         char grading ;
         switch (getAverage()/10){
             case 10:

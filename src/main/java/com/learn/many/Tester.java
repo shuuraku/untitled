@@ -4,6 +4,13 @@ import java.util.*;
 
 public class Tester {
     public static void main(String[] args) {
+//        hashmap();
+        set();
+//        list();
+//        arrayTest();
+    }
+
+    private static void hashmap() {
         HashMap<String,String> stocks = new HashMap<>();
         stocks.put("2330","台積電");
         stocks.put("2317","鴻海");
@@ -13,9 +20,6 @@ public class Tester {
         for (String key : stocks.keySet()){
             System.out.println(stocks.get(key));
         }
-//        set();
-//        list();
-//        arrayTest();
     }
 
     private static void set() {

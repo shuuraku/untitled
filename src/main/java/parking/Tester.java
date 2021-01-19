@@ -14,6 +14,13 @@ import java.util.Date;
 
 public class Tester {
     public static void main(String[] args) throws ParseException {
+//        CarLearn();
+
+        java8();
+//        java();
+    }
+
+    private static void CarLearn() {
         LocalDateTime enter =
                 LocalDateTime.of(2020,12,19,0,0,0);
         LocalDateTime leave =
@@ -24,9 +31,6 @@ public class Tester {
         int hours = (int)Math.ceil(car.getDuration()/60);
         System.out.println(hours);
         System.out.println(hours *30);
-
-//        java8();
-//        java();
     }
 
     private static void java8() {
@@ -46,6 +50,7 @@ public class Tester {
     }
 
     private static void java() throws ParseException {
+        //Date
         Date date = new Date();
         System.out.println(date);
         System.out.println(date.getTime());
@@ -56,6 +61,7 @@ public class Tester {
         Date other = sdf.parse(s);
         System.out.println(other + "\n");
 
+        //Calender
         Calendar calendar = Calendar.getInstance();
         System.out.println(calendar);
         System.out.println(calendar.getTime());
